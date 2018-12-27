@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/play_video_file_path_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Browse a video file path or input web video file url." />
+
+    <Button
+        android:id="@+id/browse_video_file_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Video File" />
+
+    <Button
+        android:id="@+id/play_video_start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Play Video" />
+
+    <ProgressBar
+        android:id="@+id/play_video_progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:visibility="invisible" />
+
+    <VideoView
+        android:id="@+id/play_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+</LinearLayout>
